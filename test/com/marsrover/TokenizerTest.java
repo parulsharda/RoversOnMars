@@ -7,6 +7,17 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class TokenizerTest {
 
+
+    @Test
+    public void shouldReturnTokens55AsGridSizeWhenInput55() {
+        Tokenizer tokenizer = new Tokenizer();
+
+        String[] tokens = tokenizer.parse("5 5");
+
+        assertArrayEquals(new String[] {"5","5"},tokens);
+
+    }
+
     @Test
     public void shouldReturnTokens11andNWhenInputIs11N() {
         Tokenizer tokenizer = new Tokenizer();
@@ -38,4 +49,3 @@ public class TokenizerTest {
     }
 
 }
-b
