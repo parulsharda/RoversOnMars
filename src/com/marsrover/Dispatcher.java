@@ -9,6 +9,6 @@ public class Dispatcher {
             else if (moves.charAt(i) == 'R')
                 return movements.turnRight(initial);
         }
-        return 'x';
+        return 'X';
     }
 }
