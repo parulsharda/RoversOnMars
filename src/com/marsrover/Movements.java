@@ -3,8 +3,7 @@ package com.marsrover;
 public class Movements {
 
     public char direction;
-    public int xCoordinate;
-    public int yCoordinate;
+
 
     public char turnLeft(char direction) {
         this.direction = direction;

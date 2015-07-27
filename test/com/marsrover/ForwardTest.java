@@ -10,12 +10,11 @@ public class ForwardTest {
 
     @Test
 
-    public void shouldMoveTheRoverInYdirectionIfInitialyWasFacingNorth()
-    {
+    public void shouldMoveTheRoverInYdirectionIfInitialyWasFacingNorth() {
         Forward forward = new Forward();
 
-        int newCoOrdinate = forward.move("1","2",'N');
+        int newCoOrdinate = forward.move("1", "2", 'N');
 
-        assertEquals(3,newCoOrdinate);
+        assertEquals(3, newCoOrdinate);
     }
 }

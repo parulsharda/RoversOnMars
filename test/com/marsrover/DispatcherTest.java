@@ -15,7 +15,7 @@ public class DispatcherTest {
         Movements movements = new Movements();
         Forward forward = new Forward();
 
-        assertEquals('W', dispatcher.dispatch("1", "1", 'N', "LMLM", movements,forward));
+        assertEquals('W', dispatcher.dispatch("1", "1", 'N', "LMLM", movements, forward));
     }
 
 
@@ -25,7 +25,7 @@ public class DispatcherTest {
         Movements movements = new Movements();
         Forward forward = new Forward();
 
-        assertEquals('E', dispatcher.dispatch("1", "1", 'N', "RMLM", movements,forward));
+        assertEquals('E', dispatcher.dispatch("1", "1", 'N', "RMLM", movements, forward));
     }
 }
 

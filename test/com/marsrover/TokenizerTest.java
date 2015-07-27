@@ -14,7 +14,7 @@ public class TokenizerTest {
 
         String[] tokens = tokenizer.tokenize("5 5");
 
-        assertArrayEquals(new String[] {"5","5"},tokens);
+        assertArrayEquals(new String[]{"5", "5"}, tokens);
 
     }
 
@@ -24,7 +24,7 @@ public class TokenizerTest {
 
         String[] tokens = tokenizer.tokenize("1 1 N");
 
-        assertArrayEquals(new String[] {"1","1","N"},tokens);
+        assertArrayEquals(new String[]{"1", "1", "N"}, tokens);
 
     }
 
@@ -34,7 +34,7 @@ public class TokenizerTest {
 
         String[] tokens = tokenizer.tokenize("5 5 S ");
 
-        assertArrayEquals(new String[] {"5","5","S"},tokens);
+        assertArrayEquals(new String[]{"5", "5", "S"}, tokens);
 
     }
 
@@ -44,7 +44,7 @@ public class TokenizerTest {
 
         String[] tokens = tokenizer.tokenize("l m l m l m");
 
-        assertArrayEquals(new String[] {"l","m","l","m","l","m"},tokens);
+        assertArrayEquals(new String[]{"l", "m", "l", "m", "l", "m"}, tokens);
 
     }
 
