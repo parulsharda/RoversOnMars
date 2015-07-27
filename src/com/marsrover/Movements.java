@@ -16,7 +16,15 @@ public class Movements {
     }
 
 
-    public char moveright(char e) {
-        return 'N';
+    public char moveright(char direction) {
+        if(direction == 'W')
+            direction = 'N';
+        else if(direction == 'S')
+            direction = 'W';
+        else if(direction == 'N')
+            direction = 'E';
+        else
+            direction = 'S';
+        return direction;
     }
 }
