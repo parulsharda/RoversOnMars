@@ -21,9 +21,21 @@ public class TokenizerTest {
     public void shouldReturnTokens55andSWhenInputIs55S() {
         Tokenizer tokenizer = new Tokenizer();
 
-        String[] tokens = tokenizer.parse("5 5 S");
+        String[] tokens = tokenizer.parse("5 5 S ");
 
         assertArrayEquals(new String[] {"5","5","S"},tokens);
 
     }
+
+    @Test
+    public void shouldReturnTokensOfMovementsCommand() {
+        Tokenizer tokenizer = new Tokenizer();
+
+        String[] tokens = tokenizer.parse("l m l m l m");
+
+        assertArrayEquals(new String[] {"l","m","l","m","l","m"},tokens);
+
+    }
+
 }
+b

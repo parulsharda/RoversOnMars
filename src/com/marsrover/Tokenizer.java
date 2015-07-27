@@ -8,9 +8,6 @@ public class Tokenizer {
 
     public String[] parse(String input) {
         String[] arr = input.split(" ");
-        initialXPosition = arr[0];
-        initialYPosition = arr[1];
-        initialDirection = arr[2];
         return arr;
     }
 }
