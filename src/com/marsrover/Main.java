@@ -8,9 +8,12 @@ public class Main {
     public static void main(String args[]) {
 
         View view = new View();
-        Tokenizer tokenizer = new Tokenizer();
+       // Tokenizer tokenizer = new Tokenizer();
+        Dispatcher dispatcher = new Dispatcher();
+        Movements movements = new Movements();
+        //System.out.println(tokenizer.arr[2].charAt(0));
         view.acceptInput();
-        /*String[] finalPosition = .dispatch(p.command, p.operand, calculator);
-        System.out.println(result);*/
+        char finalDirection = dispatcher.dispatch("1","1",'N',"L R L R",movements);
+        System.out.println(finalDirection);
     }
 }
