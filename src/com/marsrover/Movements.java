@@ -14,4 +14,9 @@ public class Movements {
             direction='S';
         return direction;
     }
+
+
+    public char moveright(char e) {
+        return 'N';
+    }
 }

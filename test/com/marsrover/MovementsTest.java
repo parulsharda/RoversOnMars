@@ -41,5 +41,14 @@ public class MovementsTest {
 
         assertEquals('S', newDirection);
     }
+
+    @Test
+    public void shouldPointToNorthtWhenInitiallyWasAtWestAndAskedToMoveLeft() {
+        Movements movements = new Movements();
+
+        char newDirection = movements.moveright('W');
+
+        assertEquals('N', newDirection);
+    }
 }
 
