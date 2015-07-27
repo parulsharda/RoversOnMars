@@ -6,7 +6,7 @@ public class Tokenizer {
     public String initialYPosition;
     public String initialDirection;
 
-    public String[] parse(String input) {
+    public String[] tokenize(String input) {
         String[] arr = input.split(" ");
         return arr;
     }

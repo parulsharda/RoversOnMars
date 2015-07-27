@@ -12,7 +12,7 @@ public class TokenizerTest {
     public void shouldReturnTokens55AsGridSizeWhenInput55() {
         Tokenizer tokenizer = new Tokenizer();
 
-        String[] tokens = tokenizer.parse("5 5");
+        String[] tokens = tokenizer.tokenize("5 5");
 
         assertArrayEquals(new String[] {"5","5"},tokens);
 
@@ -22,7 +22,7 @@ public class TokenizerTest {
     public void shouldReturnTokens11andNWhenInputIs11N() {
         Tokenizer tokenizer = new Tokenizer();
 
-        String[] tokens = tokenizer.parse("1 1 N");
+        String[] tokens = tokenizer.tokenize("1 1 N");
 
         assertArrayEquals(new String[] {"1","1","N"},tokens);
 
@@ -32,7 +32,7 @@ public class TokenizerTest {
     public void shouldReturnTokens55andSWhenInputIs55S() {
         Tokenizer tokenizer = new Tokenizer();
 
-        String[] tokens = tokenizer.parse("5 5 S ");
+        String[] tokens = tokenizer.tokenize("5 5 S ");
 
         assertArrayEquals(new String[] {"5","5","S"},tokens);
 
@@ -42,7 +42,7 @@ public class TokenizerTest {
     public void shouldReturnTokensOfMovementsCommand() {
         Tokenizer tokenizer = new Tokenizer();
 
-        String[] tokens = tokenizer.parse("l m l m l m");
+        String[] tokens = tokenizer.tokenize("l m l m l m");
 
         assertArrayEquals(new String[] {"l","m","l","m","l","m"},tokens);
 
