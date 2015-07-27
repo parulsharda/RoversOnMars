@@ -2,29 +2,32 @@ package com.marsrover;
 
 public class Movements {
 
+    public char direction;
 
-    public char moveleft(char direction) {
-        if(direction == 'N')
-            direction = 'W';
-        else if(direction == 'E')
-            direction = 'N';
-        else if(direction == 'S')
-            direction = 'E';
-        else
-            direction='S';
-        return direction;
+    public char turnLeft(char direction) {
+        this.direction = direction;
+        if (direction == 'N')
+            this.direction = 'W';
+        else if (direction == 'E')
+            this.direction = 'N';
+        else if (direction == 'S')
+            this.direction = 'E';
+        else if (direction == 'W')
+            this.direction = 'S';
+        return this.direction;
     }
 
 
-    public char moveright(char direction) {
-        if(direction == 'W')
-            direction = 'N';
-        else if(direction == 'S')
-            direction = 'W';
-        else if(direction == 'N')
-            direction = 'E';
-        else
-            direction = 'S';
-        return direction;
+    public char turnRight(char direction) {
+        this.direction = direction;
+        if (direction == 'W')
+            this.direction = 'N';
+        else if (direction == 'S')
+            this.direction = 'W';
+        else if (direction == 'N')
+            this.direction = 'E';
+        else if (direction == 'E')
+            this.direction = 'S';
+        return this.direction;
     }
 }

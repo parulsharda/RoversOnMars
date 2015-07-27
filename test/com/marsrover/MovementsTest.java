@@ -10,7 +10,7 @@ public class MovementsTest {
     public void shouldPointToWestWhenInitiallyWasAtNorthAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveleft('N');
+        char newDirection = movements.turnLeft('N');
 
         assertEquals('W', newDirection);
     }
@@ -19,7 +19,7 @@ public class MovementsTest {
     public void shouldPointToEastWhenInitiallyWasAtSouthAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveleft('S');
+        char newDirection = movements.turnLeft('S');
 
         assertEquals('E', newDirection);
     }
@@ -28,7 +28,7 @@ public class MovementsTest {
     public void shouldPointToNorthtWhenInitiallyWasAtEastAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveleft('E');
+        char newDirection = movements.turnLeft('E');
 
         assertEquals('N', newDirection);
     }
@@ -37,7 +37,7 @@ public class MovementsTest {
     public void shouldPointToSouthtWhenInitiallyWasAtWestAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveleft('W');
+        char newDirection = movements.turnLeft('W');
 
         assertEquals('S', newDirection);
     }
@@ -46,7 +46,7 @@ public class MovementsTest {
     public void shouldPointToNorthtWhenInitiallyWasAtWestAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveright('W');
+        char newDirection = movements.turnRight('W');
 
         assertEquals('N', newDirection);
     }
@@ -55,7 +55,7 @@ public class MovementsTest {
     public void shouldPointToSouthtWhenInitiallyWasAtEastAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveright('E');
+        char newDirection = movements.turnRight('E');
 
         assertEquals('S', newDirection);
     }
@@ -64,11 +64,10 @@ public class MovementsTest {
     public void shouldPointToEasttWhenInitiallyWasAtNorthAndAskedToMoveLeft() {
         Movements movements = new Movements();
 
-        char newDirection = movements.moveright('N');
+        char newDirection = movements.turnRight('N');
 
         assertEquals('E', newDirection);
     }
-
-
 }
+
 
